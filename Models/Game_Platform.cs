@@ -8,11 +8,13 @@ public class Game_Platform{
 public Guid GamePId{get;set;} = Guid.NewGuid();
 [Required]
 public  int Releaseyear{get; set;}
-[ForeignKey("Game_Plublisher")]
-public Guid GamePuId{get;set;}
-[ForeignKey("Platform")]
-public Guid PlatformId{get;set;}
+// [NotMapped]
+// [ForeignKey("Game_Plublisher")]
+// public Guid GamePuId{get;set;}
+// [NotMapped]
+// [ForeignKey("Platform")]
+// public Guid PlatformId{get;set;}
 
-public virtual Game_Plublisher game_publisher{get;set;}
-public virtual Platform plataform {get;set;}
+//public virtual Game_Plublisher game_publisher{get;set;}
+//public virtual Platform plataform {get;set;}
 }

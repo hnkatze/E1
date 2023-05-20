@@ -7,10 +7,10 @@ public class Game{
 public Guid GameId{get;set;}
 [Required]
 public String GameName{get;set;}
+// [NotMapped]
+// [ForeignKey("Genere")]
+// public Guid GenereId{get;set;}
 
-[ForeignKey("Genere")]
-public Guid GenereId{get;set;}
-
-public virtual Genere genere{get;set;}
+// public virtual Genere genere{get;set;}
 }
 
