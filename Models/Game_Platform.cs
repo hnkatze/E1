@@ -1,0 +1,18 @@
+
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+public class Game_Platform{
+
+[Key]
+public Guid GamePId{get;set;} = Guid.NewGuid();
+[Required]
+public  int Release_year{get; set;}
+[ForeignKey("Game_Plublisher")]
+public Guid GamePuId{get;set;}
+[ForeignKey("Platform")]
+public Guid PlatformId{get;set;}
+
+public virtual Game_Plublisher game_publisher{get;set;}
+public virtual Plataform plataform {get;set;}
+}
