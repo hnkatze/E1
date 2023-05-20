@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 public class Game{
 [Key]
 public Guid GameId{get;set;}
+[Required]
+public String GameName{get;set;}
 
 [ForeignKey("Genere")]
 public Guid GenereId{get;set;}

@@ -2,9 +2,9 @@
 
 using System.ComponentModel.DataAnnotations;
 
-public class Plataform{
+public class Platform{
 [Key]
-public Guid PlataformId{get;set;} = Guid.NewGuid();
+public Guid PlatformId{get;set;} = Guid.NewGuid();
 
 [Required]
 public String PlatformName{get;set;}
