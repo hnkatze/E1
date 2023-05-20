@@ -34,9 +34,9 @@ public async Task Delete(Guid id)
 
 public interface IPublisherService
 {
-    Task Create(Publisher newPublisher);
+     Task Create(Publisher newPublisher);
     IEnumerable<Publisher> Read();
     Task Update(Guid id, Publisher upPublisher);
     Task Delete(Guid id);
-
 }
+
